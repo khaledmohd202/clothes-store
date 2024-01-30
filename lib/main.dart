@@ -1,7 +1,6 @@
 import 'package:clothes_store/common/constants.dart';
-// import 'package:clothes_store/common/routes.dart';
-import 'package:clothes_store/screens/navigation_screen/navigation_screen.dart';
-// import 'package:clothes_store/screens/splash_screen/splash_screen.dart';
+import 'package:clothes_store/common/routes.dart';
+import 'package:clothes_store/screens/splash_screen/splash_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -22,9 +21,8 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      // routes: routes,
-      // initialRoute: SplashScreen.routeName,
-      home: const NavigationScreen(),
+      routes: routes,
+      initialRoute: SplashScreen.routeName,
     );
   }
 }

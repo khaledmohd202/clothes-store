@@ -1,5 +1,6 @@
 import 'package:clothes_store/common/constants.dart';
 import 'package:clothes_store/models/home_model.dart';
+import 'package:clothes_store/screens/product_screen/product_screen.dart';
 import 'package:flutter/material.dart';
 
 class NewProducts extends StatelessWidget {
@@ -27,6 +28,7 @@ class NewProducts extends StatelessWidget {
               Expanded(
                 child: InkWell(
                   onTap: () {
+                    Navigator.pushNamed(context, ProductScreen.routeName);
                     // Navigator.pushNamed(
                     //   context,
                     //   ProductDetailsScreen.routeName,

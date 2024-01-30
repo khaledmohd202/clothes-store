@@ -1,3 +1,5 @@
+import 'package:flutter/material.dart';
+
 List<String> imageList = [
   'assets/images/image1.jpg',
   'assets/images/image2.jpg',
@@ -53,4 +55,32 @@ List<String> reviews = [
   '120',
   '542',
   '34',
+];
+List productRating = [
+  4.5,
+  4.0,
+  3.5,
+  4.5,
+  4.5,
+  4.0,
+  3.5,
+  4.5,
+  4.5,
+  4.0,
+  3.5,
+  4.5,
+];
+List productColors = [
+  Colors.red,
+  Colors.green,
+  Colors.blue,
+  Colors.amber,
+  Colors.red,
+  Colors.green,
+  Colors.blue,
+  Colors.amber,
+  Colors.red,
+  Colors.green,
+  Colors.blue,
+  Colors.amber,
 ];

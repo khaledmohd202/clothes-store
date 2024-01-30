@@ -3,6 +3,8 @@ import 'package:clothes_store/screens/home_screen/widgets/best_selling.dart';
 import 'package:clothes_store/screens/home_screen/widgets/item_header.dart';
 import 'package:clothes_store/screens/home_screen/widgets/new_products.dart';
 import 'package:clothes_store/screens/home_screen/widgets/search_widget.dart';
+import 'package:clothes_store/screens/product_screen/product_screen.dart';
+import 'package:clothes_store/screens/profile_screen/profile_screen.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -25,11 +27,11 @@ class HomeScreen extends StatelessWidget {
             padding: const EdgeInsets.only(right: 15),
             child: GestureDetector(
               onTap: () {
-                // Navigator.pushNamed(context, ProfileScreen.routeName);
+                Navigator.pushNamed(context, ProfileScreen.routeName);
               },
               child: const CircleAvatar(
                 radius: 30,
-                backgroundImage: AssetImage('assets/images/khaled.jpg'),
+                backgroundImage: AssetImage('assets/images/image1.jpg'),
               ),
             ),
           ),
@@ -69,7 +71,7 @@ class HomeScreen extends StatelessWidget {
                 kSizedBoxH20,
                 BestSelling(
                   onPressed: () {
-                    // Navigator.pushNamed(context, ItemScreen.routeName);
+                    Navigator.pushNamed(context, ProductScreen.routeName);
                   },
                   height: kMediaQueryHeight(context) * 0.36,
                   //width: 150,

@@ -1,6 +1,6 @@
 import 'package:clothes_store/common/constants.dart';
-import 'package:clothes_store/screens/home_screen/home_screen.dart';
 import 'package:clothes_store/screens/login_screen/widgets/custom_text_form_field.dart';
+import 'package:clothes_store/screens/navigation_screen/navigation_screen.dart';
 import 'package:clothes_store/screens/onboarding_screen/widgets/custom_button.dart';
 import 'package:clothes_store/screens/forgot_screen/forgot_screen.dart';
 import 'package:clothes_store/screens/sign_up_screen/sign_up_screen.dart';
@@ -65,8 +65,8 @@ class LoginScreen extends StatelessWidget {
                     const SizedBox(height: 50),
                     CustomButton(
                       label: 'Login',
-                      onPressed: () =>
-                          Navigator.pushNamed(context, HomeScreen.routeName),
+                      onPressed: () => Navigator.pushNamed(
+                          context, NavigationScreen.routeName),
                     ),
                     const SizedBox(height: 15),
                     Row(

@@ -1,3 +1,4 @@
+import 'package:clothes_store/common/constants.dart';
 import 'package:flutter/material.dart';
 
 class CartScreen extends StatelessWidget {
@@ -6,10 +7,21 @@ class CartScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      body: Center(
-        child: Text('Cart Screen'),
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text(
+          'Cart Screen',
+          style: TextStyle(
+            fontWeight: FontWeight.bold,
+            fontSize: 28,
+          ),
+        ),
+        leading: const BackButton(color: Colors.black),
+        backgroundColor: Colors.transparent,
+        foregroundColor: kSecondaryColor,
+        elevation: 0,
       ),
+      body: SingleChildScrollView(),
     );
   }
 }

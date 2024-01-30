@@ -1,7 +1,7 @@
 import 'package:clothes_store/common/constants.dart';
-import 'package:clothes_store/screens/home_screen/home_screen.dart';
 import 'package:clothes_store/screens/login_screen/login_screen.dart';
 import 'package:clothes_store/screens/login_screen/widgets/custom_text_form_field.dart';
+import 'package:clothes_store/screens/navigation_screen/navigation_screen.dart';
 import 'package:clothes_store/screens/onboarding_screen/widgets/custom_button.dart';
 import 'package:flutter/material.dart';
 
@@ -78,8 +78,8 @@ class SignUpScreen extends StatelessWidget {
                     const SizedBox(height: 30),
                     CustomButton(
                       label: 'Create Account',
-                      onPressed: () =>
-                          Navigator.pushNamed(context, HomeScreen.routeName),
+                      onPressed: () => Navigator.pushNamed(
+                          context, NavigationScreen.routeName),
                     ),
                     const SizedBox(height: 10),
                     Row(
