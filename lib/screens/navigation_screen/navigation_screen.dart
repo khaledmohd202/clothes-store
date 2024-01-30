@@ -4,6 +4,7 @@ import 'package:clothes_store/screens/cart_screen/cart_screen.dart';
 import 'package:clothes_store/screens/favorites_screen/favorites_screen.dart';
 import 'package:clothes_store/screens/home_screen/home_screen.dart';
 import 'package:clothes_store/screens/profile_screen/profile_screen.dart';
+import 'package:clothes_store/screens/qr_code/qr_code.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -36,7 +37,10 @@ class _NavigationScreenState extends State<NavigationScreen> {
             Radius.circular(30),
           ),
         ),
-        onPressed: () {},
+        onPressed: () {
+          Navigator.pushNamed(context, QRCode.routeName);
+          // OR Bottom Show Modal
+        },
         backgroundColor: kSecondaryColor,
         child: const Icon(
           Icons.qr_code,

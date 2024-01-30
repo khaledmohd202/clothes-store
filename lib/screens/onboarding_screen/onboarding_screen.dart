@@ -1,6 +1,5 @@
 import 'package:clothes_store/common/constants.dart';
 import 'package:clothes_store/screens/login_screen/login_screen.dart';
-import 'package:clothes_store/screens/onboarding_screen/widgets/custom_button.dart';
 import 'package:flutter/material.dart';
 import 'package:introduction_screen/introduction_screen.dart';
 
@@ -47,22 +46,10 @@ class OnboardingScreen extends StatelessWidget {
             child: Image.asset('assets/images/splash1.png'),
           ),
           decoration: pageDecoration,
-          footer: Padding(
-            padding: const EdgeInsets.only(
-              top: 150,
-              left: 20,
-              right: 20,
-            ),
-            child: CustomButton(
-              label: 'Get Started',
-              onPressed: () =>
-                  Navigator.pushNamed(context, LoginScreen.routeName),
-            ),
-          ),
         ),
       ],
       showSkipButton: false,
-      showDoneButton: false,
+      showDoneButton: true,
       showBackButton: true,
       back: const Text(
         'Back',
@@ -81,7 +68,7 @@ class OnboardingScreen extends StatelessWidget {
         ),
       ),
       done: const Text(
-        'Done',
+        'Go',
         style: TextStyle(
           fontSize: 20,
           fontWeight: FontWeight.bold,
@@ -96,7 +83,9 @@ class OnboardingScreen extends StatelessWidget {
           color: kSecondaryColor,
         ),
       ),
-      onDone: () {},
+      onDone: () {
+        Navigator.pushNamed(context, LoginScreen.routeName);
+      },
       onSkip: () {},
       dotsDecorator: const DotsDecorator(
         size: Size.square(10),

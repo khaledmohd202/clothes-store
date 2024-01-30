@@ -7,8 +7,10 @@ import 'package:clothes_store/screens/onboarding_screen/onboarding_screen.dart';
 import 'package:clothes_store/screens/forgot_screen/forgot_screen.dart';
 import 'package:clothes_store/screens/otp_screen/otp_screen.dart';
 import 'package:clothes_store/screens/otp_verification_screen/otp_verification_screen.dart';
+import 'package:clothes_store/screens/payment_method_screen/payment_method_screen.dart';
 import 'package:clothes_store/screens/product_screen/product_screen.dart';
 import 'package:clothes_store/screens/profile_screen/profile_screen.dart';
+import 'package:clothes_store/screens/qr_code/qr_code.dart';
 import 'package:clothes_store/screens/recovery_screen/recovery_screen.dart';
 import 'package:clothes_store/screens/sign_up_screen/sign_up_screen.dart';
 import 'package:clothes_store/screens/splash_screen/splash_screen.dart';
@@ -29,4 +31,6 @@ Map<String, WidgetBuilder> routes = {
   ProfileScreen.routeName: (context) => const ProfileScreen(),
   ProductScreen.routeName: (context) => const ProductScreen(),
   NavigationScreen.routeName: (context) => const NavigationScreen(),
+  QRCode.routeName: (context) => const QRCode(),
+  PaymentMethodScreen.routeName: (context) => const PaymentMethodScreen(),
 };
