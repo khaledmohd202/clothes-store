@@ -5,7 +5,10 @@ class CustomTextFormField extends StatelessWidget {
   const CustomTextFormField({
     super.key,
     required this.label,
-    required this.icon, required this.obscureText, this.suffixIcon, this.keyboardType,
+    required this.icon,
+    required this.obscureText,
+    this.suffixIcon,
+    this.keyboardType,
   });
   final String label;
   final Icon icon;

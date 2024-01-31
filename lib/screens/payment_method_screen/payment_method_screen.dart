@@ -1,9 +1,9 @@
 import 'package:clothes_store/common/constants.dart';
 import 'package:clothes_store/screens/payment_method_screen/widgets/order_price.dart';
 import 'package:clothes_store/screens/payment_method_screen/widgets/payment_method.dart';
+import 'package:clothes_store/screens/shipping_address_screen/shipping_address_screen.dart';
 import 'package:clothes_store/widgets/container_button_modal.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 
 class PaymentMethodScreen extends StatefulWidget {
   const PaymentMethodScreen({super.key});
@@ -121,7 +121,9 @@ class _PaymentMethodScreenState extends State<PaymentMethodScreen> {
                   width: kMediaQueryWidth(context),
                   height: 50,
                   child: InkWell(
-                    onTap: () {},
+                    onTap: () {
+                      Navigator.pushNamed(context, ShippingAddressScreen.routeName);
+                    },
                     child: const ContainerButtonModal(
                       text: 'Continue',
                       color: kSecondaryColor,

@@ -5,6 +5,8 @@ import 'package:clothes_store/screens/login_screen/login_screen.dart';
 import 'package:clothes_store/screens/navigation_screen/navigation_screen.dart';
 import 'package:clothes_store/screens/onboarding_screen/onboarding_screen.dart';
 import 'package:clothes_store/screens/forgot_screen/forgot_screen.dart';
+import 'package:clothes_store/screens/order_confirmation_screen/order_confirmation_screen.dart';
+import 'package:clothes_store/screens/order_success_screen/order_success_screen.dart';
 import 'package:clothes_store/screens/otp_screen/otp_screen.dart';
 import 'package:clothes_store/screens/otp_verification_screen/otp_verification_screen.dart';
 import 'package:clothes_store/screens/payment_method_screen/payment_method_screen.dart';
@@ -12,6 +14,7 @@ import 'package:clothes_store/screens/product_screen/product_screen.dart';
 import 'package:clothes_store/screens/profile_screen/profile_screen.dart';
 import 'package:clothes_store/screens/qr_code/qr_code.dart';
 import 'package:clothes_store/screens/recovery_screen/recovery_screen.dart';
+import 'package:clothes_store/screens/shipping_address_screen/shipping_address_screen.dart';
 import 'package:clothes_store/screens/sign_up_screen/sign_up_screen.dart';
 import 'package:clothes_store/screens/splash_screen/splash_screen.dart';
 import 'package:flutter/material.dart';
@@ -33,4 +36,7 @@ Map<String, WidgetBuilder> routes = {
   NavigationScreen.routeName: (context) => const NavigationScreen(),
   QRCode.routeName: (context) => const QRCode(),
   PaymentMethodScreen.routeName: (context) => const PaymentMethodScreen(),
+  ShippingAddressScreen.routeName: (context) => const ShippingAddressScreen(),
+  OrderConfirmationScreen.routeName: (context) => const OrderConfirmationScreen(),
+  OrderSuccessScreen.routeName:(context) => const OrderSuccessScreen(),
 };
