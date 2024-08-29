@@ -17,7 +17,7 @@ class NewProducts extends StatelessWidget {
       gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
         crossAxisCount: 3,
         childAspectRatio: 0.5,
-        crossAxisSpacing: 3,
+        crossAxisSpacing: 10,
       ),
       itemBuilder: (context, index) {
         // ignore: sized_box_for_whitespace

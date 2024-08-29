@@ -35,7 +35,7 @@ class _RecoveryScreenState extends State<RecoveryScreen> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const SizedBox(height: 40),
+              const SizedBox(height: 60),
               const Text(
                 'Please enter the code sent to your email address and your new password.',
                 textAlign: TextAlign.center,
@@ -44,45 +44,46 @@ class _RecoveryScreenState extends State<RecoveryScreen> {
                   fontSize: 18,
                 ),
               ),
-              const SizedBox(height: 40),
-              const RecoveryTextForm(
+              const SizedBox(height: 60),
+              RecoveryTextForm(
                 keyboardType: TextInputType.phone,
                 obscureText: false,
                 labelText: 'Code',
                 hintText: 'Enter your code',
-                prefixIcon: Icon(Icons.numbers),
+                prefixIcon: Icon(Icons.numbers, color: Colors.black.withOpacity(0.3),),
                 visible: false,
-                suffixIcon: Icon(Icons.remove_red_eye),
+                suffixIcon: Icon(Icons.remove_red_eye, color: Colors.black.withOpacity(0.3),),
               ),
               const SizedBox(height: 20),
-              const RecoveryTextForm(
+              RecoveryTextForm(
                 keyboardType: TextInputType.visiblePassword,
                 obscureText: true,
                 labelText: 'New Password',
                 hintText: 'Enter your new password',
-                prefixIcon: Icon(Icons.lock),
-                suffixIcon: Icon(Icons.remove_red_eye),
+                prefixIcon: Icon(Icons.lock, color: Colors.black.withOpacity(0.3),),
+                suffixIcon: const Icon(Icons.remove_red_eye),
                 visible: true,
               ),
               const SizedBox(height: 20),
-              const RecoveryTextForm(
+              RecoveryTextForm(
                 keyboardType: TextInputType.visiblePassword,
                 obscureText: true,
                 labelText: 'Confirm Password',
                 hintText: 'Confirm your new password',
-                prefixIcon: Icon(Icons.lock),
-                suffixIcon: Icon(Icons.remove_red_eye),
+                prefixIcon: Icon(Icons.lock,color: Colors.black.withOpacity(0.3),),
+                suffixIcon: const Icon(Icons.remove_red_eye),
                 visible: true,
               ),
-              const SizedBox(height: 20),
+              const SizedBox(height: 50),
               SizedBox(
                 width: double.infinity,
-                height: 50,
+                // height: 50,
                 child: ElevatedButton(
                   style: ElevatedButton.styleFrom(
                     backgroundColor: kSecondaryColor,
+                    fixedSize: const Size(double.infinity, 60.0),
                     shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(15),
+                      borderRadius: BorderRadius.circular(30),
                     ),
                   ),
                   onPressed: () {

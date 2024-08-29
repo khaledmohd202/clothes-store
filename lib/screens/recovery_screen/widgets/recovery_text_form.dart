@@ -29,9 +29,23 @@ class RecoveryTextForm extends StatelessWidget {
           borderRadius: BorderRadius.circular(15),
           borderSide: const BorderSide(
             color: kSecondaryColor,
-            width: 1.5,
+            width: 2,
           ),
         ),
+        // disabledBorder: OutlineInputBorder(
+        //   borderRadius: BorderRadius.circular(15),
+        //   borderSide: const BorderSide(
+        //     color: kSecondaryColor,
+        //     width: 2,
+        //   ),
+        // ),
+        enabledBorder: OutlineInputBorder(
+      borderRadius: BorderRadius.circular(15),
+      borderSide: BorderSide(
+        color: Colors.black.withOpacity(0.3),
+        width: 2,
+      ),
+    ),
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(15),
         ),
@@ -54,6 +68,7 @@ class RecoveryTextForm extends StatelessWidget {
           child: IconButton(
             onPressed: () {},
             icon: suffixIcon,
+            color: Colors.black.withOpacity(0.3),
           ),
         ),
       ),

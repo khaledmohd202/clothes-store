@@ -51,20 +51,20 @@ class _OTPVerificationScreenState extends State<OTPVerificationScreen> {
                   fontSize: 17,
                 ),
               ),
-              const SizedBox(height: 50),
+              const SizedBox(height: 100),
               TextFieldPin(
                 textController: textEditingController,
                 margin: 10.0,
                 codeLength: 5,
                 autoFocus: false,
                 alignment: MainAxisAlignment.center,
-                selectedBoxSize: 46.0,
-                defaultBoxSize: 46.0,
+                selectedBoxSize: 60.0,
+                defaultBoxSize: 60.0,
                 textStyle:const TextStyle(fontSize: 16),
                 defaultDecoration: _pinPutDecoration.copyWith(
                   border: Border.all(
                     color: kSecondaryColor.withOpacity(0.6),
-                    width: 1.5,
+                    width:2,
                   ),
                 ),
                 selectedDecoration: _pinPutDecoration,
@@ -74,7 +74,7 @@ class _OTPVerificationScreenState extends State<OTPVerificationScreen> {
                   });
                 },
               ),
-              const SizedBox(height: 20),
+              const SizedBox(height: 70),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
@@ -104,15 +104,16 @@ class _OTPVerificationScreenState extends State<OTPVerificationScreen> {
               const SizedBox(height: 20),
               SizedBox(
                 width: double.infinity,
-                height: 50,
+                // height: 50,
                 child: ElevatedButton(
                   onPressed: () {
                     Navigator.pushNamed(context, RecoveryScreen.routeName);
                   },
                   style: ElevatedButton.styleFrom(
+                    fixedSize: const Size(double.infinity, 60.0),
                     backgroundColor: kSecondaryColor,
                     shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(15),
+                      borderRadius: BorderRadius.circular(30),
                     ),
                   ),
                   child: const Text(

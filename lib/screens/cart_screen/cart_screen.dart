@@ -154,7 +154,7 @@ class CartScreen extends StatelessWidget {
                     ),
                   ),
                   Text(
-                    '\$1150.00',
+                    '\$1100.00',
                     style: TextStyle(
                       fontSize: 18,
                       fontWeight: FontWeight.w900,

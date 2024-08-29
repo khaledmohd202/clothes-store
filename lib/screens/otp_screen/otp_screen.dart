@@ -69,8 +69,9 @@ class OTPScreen extends StatelessWidget {
                 child: ElevatedButton(
                   style: ElevatedButton.styleFrom(
                     backgroundColor: kSecondaryColor,
+                    fixedSize: const Size(double.infinity, 60.0),
                     shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(10),
+                      borderRadius: BorderRadius.circular(30),
                     ),
                   ),
                   onPressed: () {

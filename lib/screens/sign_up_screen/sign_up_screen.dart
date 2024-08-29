@@ -16,13 +16,13 @@ class SignUpScreen extends StatelessWidget {
         child: SafeArea(
           child: Column(
             children: [
-              const SizedBox(height: 30),
-              Image.asset('assets/images/freed.png'),
-              Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 20),
+              const SizedBox(height: 40),
+              Transform.scale(scale:1.4,child: Image.asset('assets/images/freed.png')),
+              const Padding(
+                padding: EdgeInsets.symmetric(horizontal: 15, vertical: 30,),
                 child: Column(
                   children: [
-                    const CustomTextFormField(
+                    CustomTextFormField(
                       keyboardType: TextInputType.name,
                       obscureText: false,
                       label: 'Name',
@@ -31,7 +31,7 @@ class SignUpScreen extends StatelessWidget {
                         color: Colors.grey,
                       ),
                     ),
-                    const CustomTextFormField(
+                    CustomTextFormField(
                       keyboardType: TextInputType.emailAddress,
                       obscureText: false,
                       label: 'Email',
@@ -40,7 +40,7 @@ class SignUpScreen extends StatelessWidget {
                         color: Colors.grey,
                       ),
                     ),
-                    const CustomTextFormField(
+                    CustomTextFormField(
                       keyboardType: TextInputType.number,
                       label: 'Number',
                       icon: Icon(
@@ -49,7 +49,7 @@ class SignUpScreen extends StatelessWidget {
                       ),
                       obscureText: false,
                     ),
-                    const CustomTextFormField(
+                    CustomTextFormField(
                       keyboardType: TextInputType.visiblePassword,
                       obscureText: true,
                       label: 'Password',
@@ -62,7 +62,7 @@ class SignUpScreen extends StatelessWidget {
                         color: Colors.grey,
                       ),
                     ),
-                    const CustomTextFormField(
+                    CustomTextFormField(
                       keyboardType: TextInputType.visiblePassword,
                       obscureText: true,
                       label: 'Confirm Password',
@@ -75,42 +75,45 @@ class SignUpScreen extends StatelessWidget {
                         color: Colors.grey,
                       ),
                     ),
-                    const SizedBox(height: 30),
-                    CustomButton(
-                      label: 'Create Account',
-                      onPressed: () => Navigator.pushNamed(
-                          context, NavigationScreen.routeName),
-                    ),
-                    const SizedBox(height: 10),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        const Text(
-                          'Already have an account',
-                          style: TextStyle(
-                            fontSize: 15,
-                            fontWeight: FontWeight.w500,
-                            color: Colors.grey,
-                          ),
-                        ),
-                        TextButton(
-                          onPressed: () => Navigator.pushNamed(
-                            context,
-                            LoginScreen.routeName,
-                          ),
-                          child: const Text(
-                            'Log in',
-                            style: TextStyle(
-                              fontSize: 15,
-                              fontWeight: FontWeight.w500,
-                              color: kSecondaryColor,
-                            ),
-                          ),
-                        ),
-                      ],
-                    ),
+                    SizedBox(height: 70),
                   ],
                 ),
+              ),
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 15),
+                child: CustomButton(
+                  label: 'Create Account',
+                  onPressed: () => Navigator.pushNamed(
+                      context, NavigationScreen.routeName),
+                ),
+              ),
+              // const SizedBox(height: 10),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  const Text(
+                    'Already have an account',
+                    style: TextStyle(
+                      fontSize: 15,
+                      fontWeight: FontWeight.w500,
+                      color: Colors.grey,
+                    ),
+                  ),
+                  TextButton(
+                    onPressed: () => Navigator.pushNamed(
+                      context,
+                      LoginScreen.routeName,
+                    ),
+                    child: const Text(
+                      'Log in',
+                      style: TextStyle(
+                        fontSize: 15,
+                        fontWeight: FontWeight.w500,
+                        color: kSecondaryColor,
+                      ),
+                    ),
+                  ),
+                ],
               ),
             ],
           ),

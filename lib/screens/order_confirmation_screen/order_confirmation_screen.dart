@@ -91,7 +91,7 @@ class OrderConfirmationScreen extends StatelessWidget {
                   context: context,
                   builder: (context) {
                     return Container(
-                      height: kMediaQueryHeight(context) / 3.57,
+                      height: kMediaQueryHeight(context) / 5,
                       padding: const EdgeInsets.all(20),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,

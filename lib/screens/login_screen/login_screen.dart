@@ -17,10 +17,10 @@ class LoginScreen extends StatelessWidget {
         child: SafeArea(
           child: Column(
             children: [
-              const SizedBox(height: 100),
-              Image.asset('assets/images/freed.png'),
+              const SizedBox(height: 170),
+              Transform.scale(scale:1.5, child: Image.asset('assets/images/freed.png'),),
               Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 20),
+                padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 50),
                 child: Column(
                   children: [
                     const CustomTextFormField(
@@ -62,7 +62,7 @@ class LoginScreen extends StatelessWidget {
                         ),
                       ],
                     ),
-                    const SizedBox(height: 50),
+                    const SizedBox(height: 70),
                     CustomButton(
                       label: 'Login',
                       onPressed: () => Navigator.pushNamed(

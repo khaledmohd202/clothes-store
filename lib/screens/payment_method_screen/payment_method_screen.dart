@@ -99,7 +99,7 @@ class _PaymentMethodScreenState extends State<PaymentMethodScreen> {
               kSizedBoxH10,
               OrderPrice(
                 title: 'Total:',
-                price: ' \$ 1150.00',
+                price: ' \$ 1100.00',
                 color: Colors.grey[700],
               ),
                OrderPrice(
@@ -111,7 +111,7 @@ class _PaymentMethodScreenState extends State<PaymentMethodScreen> {
               kSizedBoxH10,
               const OrderPrice(
                 title: 'Total Amount:',
-                price: ' \$ 1162.00',
+                price: ' \$ 1112.00',
                 color: kSecondaryColor,
               ),
               const Spacer(),

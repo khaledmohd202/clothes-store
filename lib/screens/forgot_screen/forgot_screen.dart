@@ -37,7 +37,7 @@ class _ForgotScreenState extends State<ForgotScreen> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const SizedBox(height: 50),
+              const SizedBox(height: 150),
               const Text(
                 'Please enter your email address. You will receive a link to create a new password via email.',
                 textAlign: TextAlign.center,
@@ -75,11 +75,12 @@ class _ForgotScreenState extends State<ForgotScreen> {
                   ),
                 ),
               ),
-              const SizedBox(height: 20),
+              const SizedBox(height: 50),
               SizedBox(
                 width: double.infinity,
                 child: ElevatedButton(
                   style: ElevatedButton.styleFrom(
+                    fixedSize: const Size(double.infinity, 60.0),
                     backgroundColor: kSecondaryColor,
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(30),

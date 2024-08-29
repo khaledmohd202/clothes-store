@@ -74,7 +74,7 @@ class HomeScreen extends StatelessWidget {
                   onPressed: () {
                     Navigator.pushNamed(context, ProductScreen.routeName);
                   },
-                  height: kMediaQueryHeight(context) * 0.36,
+                  height: kMediaQueryHeight(context) * 0.28,
                   //width: 150,
                 ),
                 kSizedBoxH20,
